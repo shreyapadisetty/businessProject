@@ -7,7 +7,7 @@ from tkcalendar import DateEntry
 basicMenu = ["pizza", "side", "dessert", "drink"]
 
 # each option from the categories
-pizza ={1:"Cheese Pizza", 2:"Pepperoni Pizza", 3:"Veggie Pizza", 4:"Hawaiian Pizza", 5:"Ham & Cheese Pizza", 6:"Margherita Pizza"}
+pizza = {1:"Cheese Pizza", 2:"Pepperoni Pizza", 3:"Veggie Pizza", 4:"Hawaiian Pizza", 5:"Ham & Cheese Pizza", 6:"Margherita Pizza"}
 side = { 1:"Garlic Bread", 2:"Cheesy & Garlic Scrolls", 3:"Pepperoni Puff Roll", 4:"French Fries"}
 dessert = {1:"Choc Lava Cake", 2:"Fudge Brownies", 3:"Churros"}
 drink = {1:"Pepsi", 2:"Fanta", 3:"Sprite"}
