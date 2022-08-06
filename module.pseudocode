@@ -1,0 +1,135 @@
+Import tkinter as tk
+From tkinter import messagebox
+From tkcalendar import DateEntry
+
+menu := [“pizza”, “side, “dessert”, “drink”]
+pizza := {1:"Cheese Pizza", 2:"Pepperoni Pizza", 3:"Veggie Pizza", 4:"Hawaiian Pizza", 5:"Ham & Cheese Pizza", 6:"Margherita Pizza"}
+side := { 1:"Garlic Bread", 2:"Cheesy & Garlic Scrolls", 3:"Pepperoni Puff Roll", 4:"French Fries"}
+dessert := {1:"Choc Lava Cake", 2:"Fudge Brownies", 3:"Churros"}
+drink := {1:"Pepsi", 2:"Fanta", 3:"Sprite"}
+
+crust := {1:"Classic Crust", 2:"Stuffed Crust", 3:"Gluten-Free Crust"}
+sauce := {1:"Marinara Sauce", 2:"Pesto Sauce", 3:"BBQ Sauce", 4:"White Garlic Sauce"}
+cheese := {1:"Mozzarella", 2:"Cheddar", 3:"Parmesan", 4:"Goat Cheese", 5:"Gorgonzola"}
+toppings := {1:"Pepperoni", 2:"Chicken", 3:"Ham", 4:"Peppers", 5:"Mushrooms", 6:"Black Olives", 7:"Basil", 8:"Onions", 9:"Pineapple"}
+
+cost = [12.99, 3.99, 3.99, 0.99]
+
+Function pizza menu
+	Pass In: nothing
+	Print the pizza menu
+	Pass Out: nothing
+Endfunction
+
+Function side menu
+	Pass In: nothing
+	Print the side menu
+	Pass Out: nothing
+Endfunction
+
+Function dessert menu
+	Pass In: nothing
+	Print the dessert menu
+	Pass Out: nothing
+Endfunction
+
+Function drinks menu
+	Pass In: nothing
+	Print the drinks menu
+	Pass Out: nothing
+Endfunction
+
+Function get dictionary
+	Pass In: product, option
+	IF pizza THEN
+		IF option THEN
+			Return pizza menu
+		ELSE
+			Print pizza menu
+		ENDIF
+	ENDIF
+	IF side THEN
+		IF option THEN
+			Return side menu
+		ELSE
+			Print side menu
+		ENDIF
+	ENDIF
+	Pass Out: product menu
+Endfunction
+IF dessert THEN
+		IF option THEN
+			Return dessert menu
+		ELSE
+			Print dessert menu
+		ENDIF
+	ENDIF
+IF drinks THEN
+		IF option THEN
+			Return drinks menu
+		ELSE
+			Print drinks menu
+		ENDIF
+	ENDIF
+Function crust menu
+	Pass In: nothing
+	Print the crust menu
+	Pass Out: nothing
+Endfunction
+Function sauce menu
+	Pass In: nothing
+	Print the sauce menu
+	Pass Out: nothing
+Endfunction
+Function cheese menu
+	Pass In: nothing
+	Print the cheese menu
+	Pass Out: nothing
+Endfunction
+Function toppings menu
+	Pass In: nothing
+	Print the toppings menu
+	Pass Out: nothing
+Endfunction
+Function check valid
+	Pass In: varb, val1, val2, alpdig
+	check := “n”
+	WHILE val1 is number and val2 is number and varb is alphabetical
+		varb := enter valid option from val1 to val2
+	ENDWHILE
+	IF val1 is number and val2 is number THEN
+		varb := varb to integer
+		IF absolute value of val1 – val2 > 1
+			check := “y” 
+		ENDIF
+	ENDIF
+	IF check equals “y” THEN
+		WHILE varb < val1 and varb > val2
+			BEGIN
+				varb >= val1 or varb <= val2
+			EXCEPTION
+				WHEN wrong value
+					varb := enter valid option from var1 to var2
+			END
+		ENDWHILE
+	ELSE
+		WHILE varb doesn’t equal val1 and varb doesn’t equal val2
+			BEGIN
+				varb equals val1 or varb equals val2
+			EXCEPTION
+				WHEN wrong value
+					varb := enter valid option from var1 to var2
+					IF var1 is number and var2 is number
+						varb := varb to integer
+			END
+	Pass Out: varb
+
+Function delivery date
+	Pass In: nothing
+	Creating a calendar through GUI and asking user when they want their food delivered
+	Pass Out: nothing
+
+Function print receipt
+	Pass In: customer_order, costs, subtotal, afterTax, deliveryFee, totalCost
+	Writes text that looks like a receipt with all the costs and details from user’s order
+	Pass Out: nothing
